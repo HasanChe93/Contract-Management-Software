@@ -3,22 +3,8 @@ require 'db_connection.php';
 
 $data = json_decode(file_get_contents("php://input"));
 
-if(isset($data->username)
-	&& isset($data->useremail) 
-	&& isset($data->usermobile) 
-	&& isset($data->userids) 
-	&& !empty(trim($data->username))
-	&& !empty(trim($data->useremail))
-	&& !empty(trim($data->usermobile))
-	&& !empty(trim($data->userids))
-	){
-		
-	$username = mysqli_real_escape_string($db_conn, trim($data->username));
-	$useremail = mysqli_real_escape_string($db_conn, trim($data->useremail));
-	$usermobile = mysqli_real_escape_string($db_conn, trim($data->usermobile));
-	$userids = mysqli_real_escape_string($db_conn, trim($data->userids));
-
-  $add = mysqli_query($db_conn,"update users set name ='$username', email ='$useremail' , mobile ='$usermobile' where id='$userids'");
+	
+  $add = mysqli_query($db_conn,"update contracts set is_approved ='1'");
 
 	if($add){
 		echo json_encode(["success"=>true]);
@@ -28,8 +14,4 @@ if(isset($data->username)
 		return;
     } 
 
-} else{
-    echo json_encode(["success"=>false,"msg"=>"Please fill all the required fields!"]);
-	return;
-}
 ?>

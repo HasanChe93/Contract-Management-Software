@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import  { useEffect, useState } from "react";
 
 
-const baseURL = "http://localhost/apicrud/youtube.php";
+const baseURL = "http://localhost/borCopy/React-CRUD-operations-using-PHP-API-and-MySQLi-main/apicrud/youtube.php";
+
 
 function Youtube(){
   const [post, setPost] = useState('');

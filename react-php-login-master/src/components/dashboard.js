@@ -6,7 +6,9 @@ import {useEffect,useState} from 'react'
 import {useContext} from 'react'
 import axios from 'axios';
 import {UserContext} from '../context/UserContext';
-import View from '../page/View';
+import './Dash.css'
+import {Link } from "react-router-dom";
+
 function Dashboard() {
    const {user, logout} = useContext(UserContext);
   useEffect( () => { 
@@ -18,7 +20,7 @@ function Dashboard() {
   const [isuser, setuser] = useState([{}]);
   const alluser = async (ids) => {
     try {
-      axios.get(`http://localhost/apicrud/users.php`)
+      axios.get(`http://localhost/borCopy/React-CRUD-operations-using-PHP-API-and-MySQLi-main/apicrud/dashusers.php`)
       .then(res => {
          console.log(res.data.userlist.userdata)
         setuser(res.data.userlist.userdata);
@@ -28,11 +30,47 @@ function Dashboard() {
   }
   console.log(isuser)
 
+
+
+
+  const editConfirm = async (id) => {
+    try {
+      axios.post(`http://localhost/borCopy/React-CRUD-operations-using-PHP-API-and-MySQLi-main/apicrud/editusers.php`, { 
+        userids: id,
+      })
+      .then(res => {
+        setuser([]);
+        alluser();
+        return;
+       })
+    } catch (error) { throw error;}    
+  }
+
+
+  const deleteConfirm = (id) => {
+    if (window.confirm("Are you sure?")) {
+      deleteUser(id);
+    }
+  };
+  const deleteUser = async (id) => {
+    try {
+      axios.post(`http://localhost/borCopy/React-CRUD-operations-using-PHP-API-and-MySQLi-main/apicrud/deleteusers.php`, { 
+        userids: id,
+      })
+      .then(res => {
+        setuser([]);
+        alluser();
+        return;
+       })
+    } catch (error) { throw error;}    
+  }
+
+
   return (
     <div className="page">
         
     <div className="sidebar"> 
-        <img src={require('../articles.jpg').default} alt=""/> 
+        
         <a href="/"> <i class="fa-solid fa-house"></i>&emsp;  <p className="two"> Home Page </p>  </a>
         <a href="/contracts"> <i class="fa-solid fa-sheet-plastic"></i>&emsp;   <p clas="one">Contracts </p> &nbsp; &nbsp;</a>
     
@@ -46,41 +84,63 @@ function Dashboard() {
 
 
    
-    </div><div class="contracts-container">
+    </div>
     
-  {isuser.map((user) => 
+    <table id="customers">
+    <tr>
+    <th>contract name</th>
+    <th>signing date</th>
+    <th>expiration date</th>
+    <th>total cost</th>
+    <th>legal office name</th>
+    <th>employee number</th>
+    <th>service items</th>
+    <th>amount</th>
+    <th>warranty start date</th>
+    <th>warranty end date</th>
+    <th>company name</th>
+    <th>location</th>
+    <th>phone</th>
+    <th>is_approved</th>
+
+
+
+     </tr>
+    {isuser.map((item)=>
     
-   <div className="card">
+    <tr>
+    <td>{item.contract_name}</td>
+    <td>{item.signing_date}</td>
+    <td>{item.expiration_date}</td>
+    <td>{item.total_cost}</td>
+    <td>{item.legal_office_name}</td>
+    <td>{item.employee_number}</td>
+    <td>{item.service_items}</td>
+    <td>{item.amount}</td>
+    <td>{item.warranty_start_date}</td>
+    <td>{item.warranty_end_date}</td>
+    <td>{item.company_name}</td>
+    <td>{item.location}</td>
+    <td>{item.phone}</td>
+    <td> <a onClick={() => editConfirm(item.id)} className="button-44"> Approve </a>
+    <a onClick={() => deleteConfirm(item.id)} className="button-44"> Delete </a></td>
 
-<div className="title">Standard</div>
-<div className="features">
-  <ul>
-    <li>{user.contract_name}</li>
-    <li>{user.service_items}</li>
-    <li>{user.total_cost} JOD</li>
-    <li><span>1</span> Hour free support</li>
-  </ul>
-</div>
 
-<a href="#" class="btn">view full contract insight</a>
-<a href="#" class="btn">view Company Info</a>
+   </tr>
 
-</div>
+)}
+</table>
+
    
   
-  )}
+ 
     </div>
-    </div>
+
     
   )
 }
 
 export default Dashboard
-
-
-
-
-
 
 
 

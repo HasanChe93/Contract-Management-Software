@@ -13,7 +13,7 @@ import Content from './components/layouts/Content'
 import './page/Card.css'
 import Contracts from './page/Contracts';
 
-import { Modal,show,Button} from 'react-bootstrap';
+// import { Modal,show,Button} from 'react-bootstrap';
 function App() {
 
   const {user} = useContext(UserContext); 

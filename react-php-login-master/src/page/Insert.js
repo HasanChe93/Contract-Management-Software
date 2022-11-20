@@ -69,9 +69,9 @@ const Insert = () => {
 
 return (
   <form className="insertForm" onSubmit={submitUser}>
-    <h2> Add Form </h2>
-    <label htmlFor="_contract_name">Contract Name</label>
-    <input
+    <h2 class="mb-5"> Add Form </h2>
+    <label htmlFor="_contract_name">Contract Name</label> <br/>
+    <input class="form-group mb-2"
       type="text"
       id="_contract_name"
       name="contract_name"
@@ -82,8 +82,8 @@ return (
     />
 
     <br /> <br />
-    <label htmlFor="_total_cost">total cost</label>
-    <input
+    <label htmlFor="_total_cost">total cost</label><br/>
+    <input class="form-group mb-2"
       type="text"
       id="_total_cost"
       name="total_cost"
@@ -95,8 +95,8 @@ return (
     <br /> <br />
 
 
-    <label htmlFor="_legal_office_name">legal office name</label>
-    <input
+    <label htmlFor="_legal_office_name">legal office name</label> <br/>
+    <input class="form-group mb-2"
       type="text"
       id="_legal_office_name"
       name="legal_office_name"
@@ -108,8 +108,8 @@ return (
     <br /> <br />
 
 
-    <label htmlFor="_employee_number">employee number</label>
-    <input
+    <label htmlFor="_employee_number">employee number</label> <br/>
+    <input class="form-group mb-2"
       type="text"
       id="_employee_number"
       name="employee_number"
@@ -122,8 +122,8 @@ return (
 
 
     
-    <label htmlFor="_service_items">service items</label>
-    <textarea
+    <label htmlFor="_service_items">service items</label> <br/>
+    <textarea class="form-control"
       type="text"
       id="_service_items"
       name="service_items"
@@ -137,8 +137,8 @@ return (
 
 
 
-    <label htmlFor="_amount">amount</label>
-    <input
+    <label htmlFor="_amount">amount</label> <br/>
+    <input class="form-control"
       type="text"
       id="_amount"
       name="amount"
@@ -153,8 +153,8 @@ return (
 
 
  
-    <label htmlFor="_company_name">company name</label>
-    <textarea
+    <label htmlFor="_company_name">company name</label> <br/>
+    <textarea class="form-control"
       type="text"
       id="_company_name"
       name="company_name"
@@ -168,8 +168,8 @@ return (
 
 
  
-    <label htmlFor="_location">location</label>
-    <textarea
+    <label htmlFor="_location">location</label> <br/>
+    <textarea class="form-control"
       type="text"
       id="_location"
       name="location"
@@ -183,8 +183,8 @@ return (
 
 
  
-    <label htmlFor="_liaison_officer_name">liaison officer name</label>
-    <textarea
+    <label htmlFor="_liaison_officer_name">liaison officer name</label> <br/> 
+    <textarea class="form-control"
       type="text"
       id="_liaison_officer_name"
       name="liaison_officer_name"
@@ -198,8 +198,8 @@ return (
 
 
  
-    <label htmlFor="_phone">phone</label>
-    <textarea
+    <label htmlFor="_phone">phone</label> <br/> 
+    <textarea class="form-control"
       type="text"
       id="_phone"
       name="phone"
@@ -211,8 +211,8 @@ return (
     <br /> <br />
 
 
-    <label htmlFor="_signing_date">signing date</label>
-    <input
+    <label htmlFor="_signing_date">signing date</label><br/>
+    <input class="form-control"
       type="date"
       id="_signing_date"
       name="signing_date"
@@ -225,8 +225,8 @@ return (
 
 
 
-    <label htmlFor="_expiration_date">expiration date</label>
-    <input
+    <label htmlFor="_expiration_date">expiration date</label> <br/>
+    <input class="form-control"
       type="date"
       id="_expiration_date"
       name="expiration_date"
@@ -238,8 +238,8 @@ return (
     <br /> <br />
 
 
-    <label htmlFor="_warranty_start_date">warranty start date</label>
-    <input
+    <label htmlFor="_warranty_start_date">warranty start date</label> <br/>
+    <input class="form-control"
       type="date"
       id="_warranty_start_date"
       name="warranty_start_date"
@@ -252,8 +252,8 @@ return (
 
 
 
-    <label htmlFor="_warranty_end_date">warranty end date</label>
-    <input
+    <label htmlFor="_warranty_end_date">warranty end date</label><br/>
+    <input class="form-control"
       type="date"
       id="_warranty_end_date"
       name="warranty_end_date"
