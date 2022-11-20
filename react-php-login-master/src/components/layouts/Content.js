@@ -8,11 +8,11 @@ import Header from './Header';
 function Content() {
   return (
     <div>
-      <Header/> 
-      <Youtube/>
-     
+      <Header />
+      <Youtube />
 
-      <div className="container-xxl py-5">
+
+      <div className="container-xxl con py-5">
         <div className="row g-5">
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <div
@@ -89,169 +89,6 @@ function Content() {
         </div>
       </div>
 
-      <div className="container-fluid overflow-hidden my-5 px-lg-0">
-        <div className="container facts px-lg-0">
-          <div className="row g-0 mx-lg-0">
-            <div
-              className="col-lg-6 facts-text wow fadeIn"
-              data-wow-delay="0.1s"
-            >
-              <div className="h-100 px-4 ps-lg-0">
-                <h1 className="text-white mb-4">
-                  For Individuals And Organisations
-                </h1>
-                <p className="text-light mb-5">
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                  Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                  sed stet lorem sit clita duo justo magna dolore erat amet
-                </p>
-                
-              </div>
-            </div>
-            <div
-        className="container-fluid p-0 mb-5 wow fadeIn"
-        data-wow-delay="0.1s"
-      >
-        <div
-          id="header-carousel"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="w-100" src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image"/>
-              <div className="carousel-caption">
-                <div className="container">
-                  <div className="row">
-                    <div
-                      className="col-12 col-lg-8"
-                      style={{
-                        backgroundColor: "rgba(255, 255, 255, 0.5)",
-                        padding: "25px",
-                        width: "70%",
-                      }}
-                    >
-                      <h1
-                        className="display-3 text-dark mb-1 animated slideInDown"
-                        style={{ textAlign: "left" }}
-                      >
-                        Insurance Creates Wealth For Everyone
-                      </h1>
-                      <p
-                        className="fs-5 text-body mb-5"
-                        style={{ textAlign: "left" }}
-                      >
-                        Clita erat ipsum et lorem et sit, sed stet lorem sit
-                        clita duo justo magna dolore erat amet
-                      </p>
-                    
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                className="w-100"
-                src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Image"
-              />
-              <div className="carousel-caption">
-                <div className="container">
-                  <div className="row">
-                    <div
-                      className="col-12 col-lg-8"
-                      style={{
-                        backgroundColor: "rgba(255, 255, 255, 0.5)",
-                        padding: "25px",
-                        width: "70%",
-                      }}
-                    >
-                      <h1
-                        className="display-3 text-dark mb-4 animated slideInDown"
-                        style={{ textAlign: "left" }}
-                      >
-                        The Best Insurance Begins Here
-                      </h1>
-                      <p
-                        className="fs-5 text-body mb-5"
-                        style={{ textAlign: "left" }}
-                      >
-                        Clita erat ipsum et lorem et sit, sed stet lorem sit
-                        clita duo justo magna dolore erat amet
-                      </p>
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#header-carousel"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#header-carousel"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-            <div
-              className="col-lg-6 facts-counter wow fadeIn"
-              data-wow-delay="0.5s"
-            >
-
-
-              
-              <div className="h-100 px-4 pe-lg-0">
-                <div className="row g-5">
-                  <div className="col-sm-6">
-                    <h1 className="display-5" data-toggle="counter-up">
-                      1234
-                    </h1>
-                    <p className="fs-5 text-primary">Happy Clients</p>
-                  </div>
-                  <div className="col-sm-6">
-                    <h1 className="display-5" data-toggle="counter-up">
-                      1234
-                    </h1>
-                    <p className="fs-5 text-primary">Projects Succeed</p>
-                  </div>
-                  <div className="col-sm-6">
-                    <h1 className="display-5" data-toggle="counter-up">
-                      1234
-                    </h1>
-                    <p className="fs-5 text-primary">Awards Achieved</p>
-                  </div>
-                  <div className="col-sm-6">
-                    <h1 className="display-5" data-toggle="counter-up">
-                      1234
-                    </h1>
-                    <p className="fs-5 text-primary">Team Members</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="container-xxl py-5">
         <div className="container">
@@ -333,35 +170,35 @@ function Content() {
         </div>
       </div>
 
-      <div className="container-xxl py-5">
-        <div className="container">
+      {/* <div className="container-xxl py-5">
+        <div className="container text-center">
           <div className="text-center mx-auto" style={{ maxWidth: "500px" }}>
-            <h1 className="display-6 mb-5">
-              
-              We Provide professional Insurance Services
-            </h1>
+
           </div>
-          <div className="row g-4 justify-content-center"><a id="about"></a>
+          <div className="row g-4 justify-content-center  "><a id="about"></a>
             <div
               className="col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay="0.1s"
             >
               <div className="service-item rounded h-100 p-5">
-                <div className="d-flex align-items-center ms-n5 mb-4">
-                  <div className="service-icon flex-shrink-0 bg-primary rounded-end me-4">
+                <div className="d-flex align-items-center ms-n5 mb-4 ">
+                  <div className="service-icon flex-shrink-0 bg-primary rounded-end me-4 ">
                     <img
                       className="img-fluid"
                       src="../img/icon/icon-10-light.png"
                       alt=""
                     />
                   </div>
-                  <h4 className="mb-0">Life Insurance</h4>
+                  <h4 className="mb-0">Property Insurance</h4>
                 </div>
-                <p className="mb-4">
-                  Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-                  sit clita duo justo erat amet
-                </p>
-                
+
+
+                <img
+                  className='card_text'
+                  src="/img/propinsu.png"
+                  alt=""
+                />
+
               </div>
             </div>
             <div
@@ -371,19 +208,17 @@ function Content() {
               <div className="service-item rounded h-100 p-5">
                 <div className="d-flex align-items-center ms-n5 mb-4">
                   <div className="service-icon flex-shrink-0 bg-primary rounded-end me-4">
-                    <img
-                      className="img-fluid"
-                      src="../img/icon/icon-01-light.png"
-                      alt=""
-                    />
                   </div>
-                  <h4 className="mb-0">Health Insurance</h4>
+                  <h4 className="mb-0">Business  Insurance</h4>
                 </div>
-                <p className="mb-4">
-                  Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-                  sit clita duo justo erat amet
-                </p>
-               
+
+
+                <img
+                  className='card_text'
+                  src="/img/propinsu.png"
+                  alt=""
+                />
+
               </div>
             </div>
             <div
@@ -401,91 +236,52 @@ function Content() {
                   </div>
                   <h4 className="mb-0">Home Insurance</h4>
                 </div>
-                <p className="mb-4">
-                  Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-                  sit clita duo justo erat amet
-                </p>
-             
+
+
+                <img
+                  className='card_text'
+                  src="/img/propinsu.png"
+                  alt=""
+                />
+
               </div>
             </div>
-            <div
-              className="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <div className="service-item rounded h-100 p-5">
-                <div className="d-flex align-items-center ms-n5 mb-4">
-                  <div className="service-icon flex-shrink-0 bg-primary rounded-end me-4">
-                    <img
-                      className="img-fluid"
-                      src="../img/icon/icon-08-light.png"
-                      alt=""
-                    />
-                  </div>
-                  <h4 className="mb-0">Vehicle Insurance</h4>
-                </div>
-                <p className="mb-4">
-                  Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-                  sit clita duo justo erat amet
-                </p>
-             
-              </div>
-            </div>
-            <div
-              className="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="service-item rounded h-100 p-5">
-                <div className="d-flex align-items-center ms-n5 mb-4">
-                  <div className="service-icon flex-shrink-0 bg-primary rounded-end me-4">
-                    <img
-                      className="img-fluid"
-                      src="../img/icon/icon-07-light.png"
-                      alt=""
-                    />
-                  </div>
-                  <h4 className="mb-0">Business Insurance</h4>
-                </div>
-                <p className="mb-4">
-                  Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-                  sit clita duo justo erat amet
-                </p>
-              
-              </div>
-            </div>
-            <div
-              className="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="0.5s"
-            >
-              <div className="service-item rounded h-100 p-5">
-                <div className="d-flex align-items-center ms-n5 mb-4">
-                  <div className="service-icon flex-shrink-0 bg-primary rounded-end me-4">
-                    <img
-                      className="img-fluid"
-                      src="../img/icon/icon-06-light.png"
-                      alt=""
-                    />
-                  </div>
-                  <h4 className="mb-0">Property Insurance</h4>
-                </div>
-                <p className="mb-4">
-                  Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-                  sit clita duo justo erat amet
-                </p>
-               
-              </div>
-            </div>
+
+          </div>
+        </div>
+      </div> */}
+      <div className='container'>
+        <div className='row'>
+          <h1 className="display-6 mb-5 text-center">
+            We Provide professional Insurance Services
+          </h1>
+        </div>
+        <div className='row text-center'>
+          <div className='col-4 '>
+            <h3>Property Insurance
+            </h3>
+            <img src="/img/propinsu.png" style={{height: 300}} className="img-fluid"/>
+          </div>
+          <div className='col-4'>
+            <h3>Business Insurance
+</h3>
+            <img src="/img/Business Insurance.jpg" style={{height: 300}} className="img-fluid"/>
+          </div>
+          <div className='col-4'>
+            <h3>Home Insurance
+</h3>
+            <img src="/img/Home Insurance.webp" style={{height: 300}} className="img-fluid"/>
           </div>
         </div>
       </div>
-
       <div
         className="container-fluid"
         data-wow-delay="0.1s"
       >
-        
+
       </div>
 
-      <div className="container-xxl py-5">
+      {/* <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center mx-auto" style={{ maxWidth: "500px" }}>
             <h1 className="display-6 mb-5">
@@ -571,9 +367,9 @@ function Content() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="container-xxl py-5">
+      {/* <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center mx-auto" style={{ maxWidth: "500px" }}>
             <h1 className="display-6 mb-5">
@@ -667,8 +463,8 @@ function Content() {
             </div>
           </div>
         </div>
-      </div>
-      <Footer/>
+      </div> */}
+
     </div>
   );
 }

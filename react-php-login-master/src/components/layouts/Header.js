@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Header() {
   return (
     <div>
-      <div className="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
+      {/* <div className="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
         <div className="row gx-0 align-items-center">
           <div className="col-lg-7 px-5 text-start">
             <div className="h-100 d-inline-flex align-items-center me-4">
@@ -23,47 +23,37 @@ function Header() {
             </div>
           </div>
         </div>
-      </div>
-
-      <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" className="navbar-brand d-flex align-items-center">
-          <h1 className="m-0">
-            <img
-              className="img-fluid me-3"
-              src="img/icon/icon-02-primary.png"
-              alt=""
-            />
-            Insure
-          </h1>
-        </a>
-       
-        <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-            <a href="index.html" className="nav-item nav-link active">
-              Home
-            </a>
-            <a href="#about" className="nav-item nav-link">
-              About Us
-            </a>
-            <a href="#service" className="nav-item nav-link">
-              Our Services
-            </a>
-            <div className="nav-item dropdown">
-             
-              <div className="dropdown-menu bg-light border-0 m-0">
-              
-              </div>
-            </div>
-            
+      </div> */}
+      <nav className="navbar navbar-expand-lg bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">Insure</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Our services</a>
+              </li>
+              <li className="nav-item">
+                <a href="/login" className="btn btn-primary px-3 d-none d-lg-block ">
+                  Login
+                </a>
+                <a href="/signup" className="btn btn-info px-3 d-none d-lg-block ml-3">
+                  Sign up
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <a href="/login" className="btn btn-primary px-3 d-none d-lg-block ">
-          Login 
-        </a>  
-        <a href="/signup" className="btn btn-info px-3 d-none d-lg-block ml-3">
-          Sign up 
-        </a>
       </nav>
+
     </div>
   );
 }
